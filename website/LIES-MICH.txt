@@ -51,4 +51,24 @@ GUT ZU WISSEN
   hochladen. Dafür bräuchten wir einen FTP-Zugang, der nur auf diesen Ordner
   beschränkt ist. Bis dahin gibt es einfach ein neues ZIP-Paket.
 
+TERMINE AUS GOOGLE KALENDER
+---------------------------
+Der Bereich "Nächste Auftritte" wird täglich (ca. 04:17 Uhr) automatisch aus
+einem öffentlichen Google-Kalender befüllt (GitHub Action "Sync events from
+Google Calendar", Datei website/events.json).
+
+Einrichtung (einmalig):
+1. Google Kalender -> Einstellungen des Auftrittskalenders -> "Für die
+   Öffentlichkeit freigeben" und die "Öffentliche Adresse im iCal-Format"
+   kopieren.
+2. GitHub -> Repository -> Settings -> Secrets and variables -> Actions ->
+   New repository secret: Name GOOGLE_CALENDAR_ICS_URL, Wert = iCal-Adresse.
+3. Actions -> "Sync events from Google Calendar" -> Run workflow (Sofort-Test).
+
+Angezeigt werden Datum, Titel, Ort, Uhrzeit (Europe/Berlin) und Beschreibung.
+Ist der Kalender nicht erreichbar, schlägt der Lauf fehl und die zuletzt
+veröffentlichte Terminliste bleibt unverändert. Die iCal-Adresse steht nur im
+GitHub-Secret, nie in der Webseite.
+
+
 Fragen gern an Stefan.

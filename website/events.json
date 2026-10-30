@@ -1,0 +1,38 @@
+{
+  "updated": "2026-10-30T00:00:00Z",
+  "events": [
+    {
+      "id": "seed-20261114",
+      "date": "2026-11-14",
+      "endDate": "2026-11-14",
+      "allDay": true,
+      "start": null,
+      "end": null,
+      "title": "50. Geburtstag",
+      "location": "Private Feier",
+      "description": ""
+    },
+    {
+      "id": "seed-20261205",
+      "date": "2026-12-05",
+      "endDate": "2026-12-05",
+      "allDay": true,
+      "start": null,
+      "end": null,
+      "title": "Weihnachtsmarkt",
+      "location": "Solingen",
+      "description": ""
+    },
+    {
+      "id": "seed-20261231",
+      "date": "2026-12-31",
+      "endDate": "2026-12-31",
+      "allDay": true,
+      "start": null,
+      "end": null,
+      "title": "Silvesterparty",
+      "location": "Remscheid",
+      "description": ""
+    }
+  ]
+}
