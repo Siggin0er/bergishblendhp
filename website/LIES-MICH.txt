@@ -1,0 +1,54 @@
+BERGISH BLEND – NEUE WEBSEITE (statische Fassung für Apache-/PHP-Webspace)
+==========================================================================
+
+Hallo Thomas,
+
+in diesem Paket steckt die komplette neue Webseite als fertige Dateien
+(HTML, CSS, JavaScript, Bilder, Schriften). Es wird KEIN PHP, KEINE Datenbank
+und KEIN Node.js benötigt – ein ganz normaler Webspace reicht.
+
+WICHTIG: Das ist ein TESTPAKET. Bitte noch nicht live schalten, bevor die
+Datenschutzerklärung angepasst ist (dort steht aktuell noch der alte Hoster).
+Dafür brauchen wir von dir den Namen und die Anschrift deines Hosters.
+
+
+SO GEHT'S (Vorschlag mit einfacher Rückfalloption)
+--------------------------------------------------
+1. Sicherung der bisherigen WordPress-Seite anlegen (Dateien + Datenbank).
+
+2. Auf dem Webspace einen neuen Ordner anlegen, z. B. "bergishblend-neu".
+
+3. Den INHALT dieses ZIP-Pakets (nicht den Ordner selbst) per FTP in diesen
+   Ordner hochladen. Achtung: Die Datei ".htaccess" ist versteckt – im
+   FTP-Programm "versteckte Dateien anzeigen" einschalten, damit sie mitkommt.
+
+   Danach sollte im Ordner liegen:
+     index.html
+     .htaccess
+     favicon.png, robots.txt
+     assets/        (CSS, JavaScript, Bilder, Schriften)
+     impressum/     (index.html)
+     datenschutz/   (index.html)
+
+4. Zum Testen eine Subdomain (z. B. neu.bergishblend.de) auf diesen Ordner
+   zeigen lassen und anschauen.
+
+5. Live schalten: Im Hoster-Kundenmenü das Zielverzeichnis der Domain
+   bergishblend.de (und www.bergishblend.de) auf "bergishblend-neu" umstellen.
+   Rückweg jederzeit möglich, indem man wieder auf den WordPress-Ordner zeigt.
+
+6. SSL/https prüfen. Wenn das Zertifikat aktiv ist, in der .htaccess die drei
+   Zeilen unter "Immer https" aktivieren (jeweils das # am Zeilenanfang löschen).
+
+
+GUT ZU WISSEN
+-------------
+- E-Mail-Adressen sind nicht betroffen – bitte nur das Web-Verzeichnis bzw.
+  die Web-Einträge ändern, nichts an den MX-/Mail-Einstellungen.
+- Die Seite setzt keine Cookies und lädt nichts von Google o. Ä. Das
+  YouTube-Video wird erst nach Klick auf "Abspielen" geladen.
+- Updates: Später kann GitHub neue Versionen automatisch per FTP in den Ordner
+  hochladen. Dafür bräuchten wir einen FTP-Zugang, der nur auf diesen Ordner
+  beschränkt ist. Bis dahin gibt es einfach ein neues ZIP-Paket.
+
+Fragen gern an Stefan.
