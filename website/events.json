@@ -1,17 +1,6 @@
 {
-  "updated": "2026-10-31T08:20:57Z",
+  "updated": "2026-11-01T10:26:49Z",
   "events": [
-    {
-      "date": "2026-10-31",
-      "endDate": "2026-10-31",
-      "allDay": true,
-      "start": null,
-      "end": null,
-      "id": "0598a022302d",
-      "title": "Testauftritt",
-      "location": "",
-      "description": ""
-    },
     {
       "date": "2027-03-13",
       "endDate": "2027-03-13",
